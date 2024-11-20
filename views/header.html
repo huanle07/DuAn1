@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trang chủ</title>
+    <link rel="stylesheet" href="../public/css/all.css">
+    <script src="https://kit.fontawesome.com/12f70b0cc4.js" crossorigin="anonymous"></script>
     <style>
         body{
             margin: 0;
@@ -19,11 +21,49 @@
         }
         li{
             display: inline;
-            margin-right: 20px;
-            font-family: 'Courier New', Courier, monospace;
+            margin-right: 30px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-        .inputSearch{
-            
+        li a{
+            text-decoration: none;
+            color: black;
+        }
+        li a:hover{
+            color: #FF9721;
+        }
+        li i{
+            font-size: 20px;
+        }
+        li i:hover{
+            color: #FF9721;
+            cursor: pointer;
+        }
+        input[name="searchInput"]{
+            border-radius: 30px;
+            padding-left: 30px;
+            width: 200px;
+            border: none;
+            outline: none;
+            height: 23px;
+        }
+        .searchInput{
+            position: relative;
+        }
+        .searchInput i{
+            position: absolute;
+        }
+        .fa-bars{
+            left: 10px;
+            top: 6px;
+            font-size: 15px;
+        }
+        .fa-magnifying-glass{
+            right: 10px;
+            top: 6px;
+            font-size: 15px;
+        }
+        input[name="searchInput"]::placeholder{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
     </style>
 </head>
@@ -32,14 +72,25 @@
         <li>
             <a href=""><img src="/public/image/logo.png" alt="" height="50px"></a>
         </li>
-        <li>Trang chủ</li>
-        <li>Sản phẩm</li>
-        <li>Giới thiệu</li>
-        <li>Liên hệ</li>
-        <li>Tin tức</li>
+        <li><a href="">Trang chủ</a></li>
+        <li><a href="">Sản phẩm</a></li>
+        <li><a href="">Giới thiệu</a></li>
+        <li><a href="">Liên hệ</a></li>
+        <li><a href="">Tin tức</a></li>
         <li>
-            <div class="searchInput">
-                <input type="text" placeholder="Tìm kiếm">
-            </div>
+            <form action="" class="searchInput">
+                <input type="text" placeholder="Tìm kiếm" name="searchInput">
+                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </form>
+        </li>
+        <li>
+            <i class="fa-solid fa-cart-shopping"></i>
+        </li>
+        <li>
+            <i class="fa-solid fa-user"></i>
+        </li>
+        <li>
+            <i class="fa-solid fa-heart"></i>
         </li>
     </ul>
