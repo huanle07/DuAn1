@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casio World Time AE-1200WHD-1AVDF</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+        }
+
+        .product-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .product-price {
+            font-size: 22px;
+            color: #d2232a;
+            margin-bottom: 20px;
+        }
+
+        .product-details {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .product-image {
+            flex: 1 1 300px;
+        }
+
+        .product-image img {
+            max-width: 100%;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .product-info {
+            flex: 2 1 400px;
+        }
+
+        .product-info button {
+            display: block;
+            margin: 10px 0;
+            padding: 10px;
+            font-size: 16px;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn-showroom {
+            background-color: #f57c00;
+        }
+
+        .btn-cart {
+            background-color: #007bff;
+        }
+
+        .btn-installment {
+            background-color: #28a745;
+        }
+
+        .related-products {
+            margin-top: 40px;
+        }
+
+        .related-products h3 {
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .related-products-list {
+            display: flex;
+            gap: 15px;
+            overflow-x: auto;
+        }
+
+        .related-product-item {
+            flex: 0 0 150px;
+            text-align: center;
+        }
+
+        .related-product-item img {
+            max-width: 100%;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .related-product-item p {
+            font-size: 14px;
+            color: #333;
+        }
+        /* Bố cục grid cho các sản phẩm */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 cột */
+    gap: 20px; /* Khoảng cách giữa các sản phẩm */
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+/* Thiết kế từng sản phẩm */
+.product-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Ảnh chính của sản phẩm */
+.product-main-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Ảnh phụ của sản phẩm */
+.product-sub-images {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.product-sub-images img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.product-sub-images img:hover {
+    transform: scale(1.1);
+    border-color: #f57c00;
+}
+
+/* Tên sản phẩm */
+.product-name {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0;
+}
+
+/* Giá sản phẩm */
+.product-price {
+    font-size: 14px;
+    color: #d2232a;
+    margin-bottom: 5px;
+}
+
+/* Mô tả sản phẩm */
+.product-description {
+    font-size: 12px;
+    color: #666;
+}
+
+    </style>
+</head>
+<body>
+    <div class="product-grid">
+    <!-- Sản phẩm 1 -->
+    <div class="product-item">
+        <img class="product-main-image" src="https://via.placeholder.com/200" alt="Product Image">
+        <div class="product-sub-images">
+            <img src="https://via.placeholder.com/60" alt="Sub Image 1">
+            <img src="https://via.placeholder.com/60" alt="Sub Image 2">
+            <img src="https://via.placeholder.com/60" alt="Sub Image 3">
+        </div>
+        <h3 class="product-name">Tên sản phẩm 1</h3>
+        <p class="product-price">Giá: 1.500.000₫</p>
+        <p class="product-description">Mô tả ngắn gọn về sản phẩm.</p>
+    </div>
+
+    <!-- Thêm các sản phẩm khác -->
+    <div class="product-item">
+        <img class="product-main-image" src="https://via.placeholder.com/200" alt="Product Image">
+        <div class="product-sub-images">
+            <img src="https://via.placeholder.com/60" alt="Sub Image 1">
+            <img src="https://via.placeholder.com/60" alt="Sub Image 2">
+            <img src="https://via.placeholder.com/60" alt="Sub Image 3">
+        </div>
+        <h3 class="product-name">Tên sản phẩm 2</h3>
+        <p class="product-price">Giá: 2.000.000₫</p>
+        <p class="product-description">Mô tả ngắn gọn về sản phẩm.</p>
+    </div>
+    <div class="product-item">
+        <img class="product-main-image" src="https://via.placeholder.com/200" alt="Product Image">
+        <div class="product-sub-images">
+            <img src="https://via.placeholder.com/60" alt="Sub Image 1">
+            <img src="https://via.placeholder.com/60" alt="Sub Image 2">
+            <img src="https://via.placeholder.com/60" alt="Sub Image 3">
+        </div>
+        <h3 class="product-name">Tên sản phẩm 2</h3>
+        <p class="product-price">Giá: 2.000.000₫</p>
+        <p class="product-description">Mô tả ngắn gọn về sản phẩm.</p>
+    </div>
+    <div class="product-item">
+        <img class="product-main-image" src="https://via.placeholder.com/200" alt="Product Image">
+        <div class="product-sub-images">
+            <img src="https://via.placeholder.com/60" alt="Sub Image 1">
+            <img src="https://via.placeholder.com/60" alt="Sub Image 2">
+            <img src="https://via.placeholder.com/60" alt="Sub Image 3">
+        </div>
+        <h3 class="product-name">Tên sản phẩm 2</h3>
+        <p class="product-price">Giá: 2.000.000₫</p>
+        <p class="product-description">Mô tả ngắn gọn về sản phẩm.</p>
+    </div>
+
+    <!-- Lặp lại thêm các sản phẩm để đủ 2 hàng, mỗi hàng 4 sản phẩm -->
+</div>
+
+    <div class="container">
+        <h1 class="product-title">Casio World Time AE-1200WHD-1AVDF</h1>
+        <p class="product-price">1.506.000 ₫</p>
+        <div class="product-details">
+            <div class="product-image">
+                <img src="https://via.placeholder.com/300x400" alt="Casio AE-1200WHD-1AVDF">
+            </div>
+            <div class="product-info">
+                <p>Đồng hồ nam Casio AE-1200WHD-1AVDF thiết kế mặt số LCD vuông kết hợp phong cách cổ điển và hiện đại, nổi bật nhờ khả năng hiển thị 4 múi giờ tiện dụng.</p>
+                <button class="btn-showroom">Xem Showroom Còn Hàng</button>
+                <button class="btn-cart">Thêm Vào Giỏ Hàng</button>
+                <button class="btn-installment">Mua Trả Góp</button>
+            </div>
+        </div>
+        <div class="related-products">
+            <h3>Sản phẩm liên quan</h3>
+            <div class="related-products-list">
+                <div class="related-product-item">
+                    <img src="https://via.placeholder.com/150" alt="Sản phẩm liên quan 1">
+                    <p>Casio - Nam MTP-B145D-2AVDF</p>
+                </div>
+                <div class="related-product-item">
+                    <img src="https://via.placeholder.com/150" alt="Sản phẩm liên quan 2">
+                    <p>Citizen - Nam NJ0151-88M</p>
+                </div>
+                <div class="related-product-item">
+                    <img src="https://via.placeholder.com/150" alt="Sản phẩm liên quan 3">
+                    <p>Bentley - Nam BL2333-10MTCI</p>
+                </div>
+                <div class="related-product-item">
+                    <img src="https://via.placeholder.com/150" alt="Sản phẩm liên quan 4">
+                    <p>Casio - Nam MTP-B145D-2AVDF</p>
+                </div>
+                <div class="related-product-item">
+                    <img src="https://via.placeholder.com/150" alt="Sản phẩm liên quan 5">
+                    <p>Citizen - Nam NJ0151-88M</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -2,7 +2,7 @@ body{
     margin: 0;
     padding: 0;
 }
-ul{
+header ul{
     display: flex;
     margin: 0;
     height: 50px;
@@ -10,22 +10,22 @@ ul{
     justify-content: center;
     align-items: center;
 }
-li{
+header li{
     display: inline;
     margin-right: 30px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-li a{
+header li a{
     text-decoration: none;
     color: black;
 }
-li a:hover{
+header li a:hover{
     color: #FF9721;
 }
-li i{
+header li i{
     font-size: 20px;
 }
-li i:hover{
+header li i:hover{
     color: #FF9721;
     cursor: pointer;
 }
