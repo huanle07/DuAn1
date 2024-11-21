@@ -37,7 +37,78 @@
     border-radius: 10%;
     border: 1px solid black;
 }
-
+p,h1,h2,h3,h4,span{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 .details{
     width: 45%;
+}
+.details h1{
+    font-size: 24px;
+}
+.product-pride{
+    color: red;
+    font-size: 24px;
+}
+.product-button button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-showroom {
+    background-color: #007bff;
+}
+
+.btn-cart {
+    background-color: #FF9721;
+}
+
+.btn-installment {
+    background-color: #28a745;
+}
+.fa-check{
+    border-radius: 50%;
+    padding: 3px;
+    background-color: red;
+    color: white;
+}
+.discount{
+    background-color: #d9d9d9;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.discount h4 {
+    margin: 0;
+}
+.related-product-item{
+    width: 90%;
+    margin: auto;
+}
+.related-products-list {
+    display: flex;
+    gap: 15px;
+
+}
+
+.related-product-item {
+    flex: 0 0 150px;
+    text-align: center;
+}
+
+.related-product-item img {
+    max-width: 100%;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.related-product-item p {
+    font-size: 14px;
+    margin: 0;
 }
