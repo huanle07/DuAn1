@@ -1,0 +1,170 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Style */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 20px;
+    background-color: #d1d1d1;
+    color: black;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar .menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar .menu li {
+    display: inline;
+}
+
+.navbar .menu a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar .menu a:hover {
+    color: #ff9721;
+}
+
+.navbar .cart a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+}
+
+/* Header Banner */
+.banner {
+    text-align: center;
+    background: url('banner.jpg') no-repeat center center/cover;
+    color: white;
+    
+}
+
+.banner h1 {
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Categories Section */
+.categories {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background: #f9f9f9;
+}
+
+.category {
+    text-align: center;
+}
+
+.category img {
+    width: 50px;
+    height: 50px;
+}
+
+/* Promotions Section */
+.promotions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.promo-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.promo-item p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Products Section */
+.products {
+    padding: 20px;
+    background: #fff;
+}
+
+.products h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.product-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product {
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    width: 200px;
+}
+
+.product img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.product .price {
+    color: #e60000;
+    font-weight: bold;
+}
+
+button {
+    background: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #222;
+    color: white;
+}
+
+footer .social-icons a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+
+footer .social-icons a:hover {
+    text-decoration: underline;
+}
