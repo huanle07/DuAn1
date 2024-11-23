@@ -1,0 +1,85 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container{
+    width: 90%;
+    margin: auto;
+}
+.banner {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.banner img{
+    width: 48%;
+}
+
+.filter-choose ul li{
+    display: inline;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #d9d9d9;
+    border-radius: 20px;
+}
+.filter-choose ul li:first-child{
+    margin-left: 0;
+}
+.filter-choose ul{
+    margin-left: 0;
+    padding-left: 0;
+}
+.product-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+}
+.contain-product{
+    width: 23%;
+    background-color: #d9d9d9;
+    margin-bottom: 30px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.contain-product a{
+    text-decoration: none;
+    color: black;
+}
+.product-image .sub-image {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: -5px;
+    margin-bottom: 10px;
+}
+.product-image .sub-image img{
+    width: 32%;
+    border-radius: 10px;
+}
+.contain-product .main-image img{
+    border-radius: 10px;
+    width: 100%;
+}
+.product-pride{
+    color: red;
+    font-size: 20px;
+}
+.product-info{
+    margin: 10px;
+}
+.muangay{
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+.muangay button{
+    outline: none;
+    border: 0;
+    padding: 5px 10px;
+    background-color: #FF9721;
+    border-radius: 10px;
+    cursor: pointer;
+}
